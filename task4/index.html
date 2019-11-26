@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        
+    </head>
+    <body>
+        <h1>Marks Sheet</h1>
+            <script>
+                    var tm = 300;
+                    var mo = prompt("Enter your marks");
+                    var percentage = (mo / tm) * 100;
+                    //parseInt(mo);
+                    
+                        if (mo > 300 && mo < 0) 
+                        {
+                            alert("Invalid Marks");
+                        } 
+                        
+                        else if (mo >= 250) 
+                        {
+                            document.write("Your Grade: A+ <br/>");
+        
+                            document.write("Your Marks: "+mo+"<br/>" );
+        
+                            document.write("Your Percentage: "+percentage+"%");
+        
+                            document.write("Remarks: Excellent");
+                        }
+        
+                        else if (mo >= 200 && mo<=249) {
+                             
+                            document.write("Your Grade: A </br>");
+        
+                            document.write("Your Marks: "+mo+"</br>");
+        
+                            document.write("Your Percentage: "+percentage+"% </br>");
+        
+                            document.write("Remarks: Good");
+        
+                        }
+        
+        
+                        else if (mo >= 150 && mo<=199) {
+                             
+                             document.write("Your Grade: B </br>");
+         
+                             document.write("Your Marks: "+mo+"</br>");
+         
+                             document.write("Your Percentage: "+percentage+"% </br>");
+         
+                             document.write("Remarks: You need improvement");
+        
+                        }
+                        
+                        else if (mo >= 100 && mo <= 149) {
+                             
+                             document.write("Your Grade: F </br>");
+         
+                             document.write("Your Marks: "+mo+"</br>");
+         
+                             document.write("Your Percentage: "+percentage+"% </br>");
+         
+                             document.write("Remarks: Failed ");
+        
+                        }    
+                        
+                        else if (mo <100) {
+                            alert("Failed")
+                            
+                        }
+        
+                        
+                </script>
+        
+        
+    </body>
+</html>
